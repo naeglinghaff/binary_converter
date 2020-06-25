@@ -9,6 +9,9 @@ class BinaryConverter
   private
 
   def calculate(int)
-    int == 1 ? "01" : "10"
+    results = []
+    int / 2 == 1 ? results.push(1) : results.push(0)
+    int % 2 == 1 ? results.push(1) : results.push(0)
+    results.join("")
   end
 end

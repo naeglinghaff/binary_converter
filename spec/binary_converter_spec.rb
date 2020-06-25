@@ -19,6 +19,10 @@ describe BinaryConverter do
     it 'should return the binary value of decimal 2' do
       expect(@converter.convert(2)).to eq("10")
     end
+
+    it 'should return the binary value of decimal 3' do
+      expect(@converter.convert(3)).to eq("11")
+    end
   end
 
 end
