@@ -11,4 +11,7 @@ For example:
 | Input | Method | Output |
 
 | 417 | binary.convert(417) | 110100001 |
+| 100 | binary.convert(100) | 1100100 |
+| 1 | binary.convert(1) | 01 |
+| 2  | binary.convert(2) | 10 | 
 | 110100001 | binary.reverse(110100001) | 417|

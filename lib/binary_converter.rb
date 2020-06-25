@@ -3,6 +3,10 @@ class BinaryConverter
   end
 
   def convert(int)
-    return int
+    if int == 0
+      return "#{int}"
+    elsif int > 0
+      return "01"
+    end
   end
 end

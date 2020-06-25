@@ -7,7 +7,14 @@ describe BinaryConverter do
     @converter = BinaryConverter.new
   end
 
-  it 'should return 0 when submitted 0 ' do
-    expect(@converter.convert(0)).to eq(0)
+  describe "#convert" do
+    it 'should return 0 when submitted 0 ' do
+      expect(@converter.convert(0)).to eq("0")
+    end
+
+    it 'should return the binary value of a decimal integer' do
+      expect(@converter.convert(1)).to eq("01")
+    end
   end
+
 end
