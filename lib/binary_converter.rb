@@ -3,20 +3,12 @@ class BinaryConverter
   end
 
   def convert(int)
-    if int == 0
-      return "#{int}"
-    elsif int > 0
-      calculate(int)
-    end
+    int == 0 ? "#{int}" : calculate(int)
   end
 
   private
 
   def calculate(int)
-    if int == 1
-      return "01"
-    else
-      return "10"
-    end
+    int == 1 ? "01" : "10"
   end
 end
