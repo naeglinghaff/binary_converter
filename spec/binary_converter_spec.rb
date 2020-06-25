@@ -12,8 +12,12 @@ describe BinaryConverter do
       expect(@converter.convert(0)).to eq("0")
     end
 
-    it 'should return the binary value of a decimal integer' do
+    it 'should return the binary value of a decimal 1' do
       expect(@converter.convert(1)).to eq("01")
+    end
+
+    it 'should return the binary value of decimal 2' do
+      expect(@converter.convert(2)).to eq("10")
     end
   end
 
