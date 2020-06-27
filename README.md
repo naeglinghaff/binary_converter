@@ -2,6 +2,17 @@
 
 A simple ruby script that converts integers into their binary expression.
 
+### Running
+
+To play with the code clone this repo, navigate to the route directory then:
+
+```
+pry -r './lib/binary_converter.rb'
+number = BinaryConverter.new
+number.convert(integer: 10)
+```
+You can use any REPL to interact with the code. I am using PRY.
+
 ### Approach
 
 I created a class whose instances could abstract the process of converting numbers into binary. I chose to TDD my solution starting with the simplest examples for 8 bit numbers:
