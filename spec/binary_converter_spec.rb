@@ -39,6 +39,14 @@ describe BinaryConverter do
     it 'should handle odd double digits' do
       expect(@number.convert(integer: 13)).to eq("00001101")
     end
+
+    it 'should handle even triple digits' do
+      expect(@number.convert(integer: 100)).to eq("01100100")
+    end
+
+    it 'should handle odd triple digits' do
+      expect(@number.convert(integer: 101)).to eq("01100101")
+    end
   end
 
 end

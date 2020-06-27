@@ -1,17 +1,32 @@
 ## Binary Converter
 
-A simple ruby script that converts integers into binary and vis versa.
+A simple ruby script that converts integers into their binary expression.
 
 ### Approach
 
-Create a single class that can abstract the process of converting numbers into binary. The class should have 2 public methods that can covert or reverse binary numbers
+I created a class whose instances could abstract the process of converting numbers into binary. I chose to TDD my solution starting with the simplest examples:
 
-For example:
+8 bit numbers:
+| Input | Output |
+| 1 | 00000001 |
+| 2  | 00000010 |
+| 3 | 00000011 |
+| 10 | 00001010 |
+| 11 | 00001011 |
+| 100 | 1100100 |
 
-| Input | Method | Output |
+These examples formed the outline for my early tests.
 
-| 417 | binary.convert(417) | 110100001 |
-| 100 | binary.convert(100) | 1100100 |
-| 1 | binary.convert(1) | 01 |
-| 2  | binary.convert(2) | 10 | 
-| 110100001 | binary.reverse(110100001) | 417|
+To run the tests clone and enter the route of the project and run:
+```
+rspec
+```
+
+### Design decisions
+
+Part of the challenge here was to attempt to implement more 'clean code' practices from https://github.com/uohzxela/clean-code-ruby (a refactored  version of Robert C. Martin's book Clean Code, originally for JavaScript). Therefore, I tried to think carefully about my variable names, dependency injection, DRY principles and SRPs.
+
+
+### Known issues
+
+Currently the converter can only convert numbers that take up to 8 bits in memory. Anything over 255 will therefore not be able to be converted until the code is adapted. This is next on the list of features to implement.

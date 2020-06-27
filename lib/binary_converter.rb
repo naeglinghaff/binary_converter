@@ -4,6 +4,7 @@ class BinaryConverter
     @results = [0,0,0,0,0,0,0,0]
   end
 
+# pulbic method returns 0 for a 0 input or calculates the binary
   def convert(integer:)
     integer == 0 ? "#{integer}" : calculate(integer: integer)
   end
