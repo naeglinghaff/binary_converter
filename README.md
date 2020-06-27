@@ -4,10 +4,10 @@ A simple ruby script that converts integers into their binary expression.
 
 ### Approach
 
-I created a class whose instances could abstract the process of converting numbers into binary. I chose to TDD my solution starting with the simplest examples:
+I created a class whose instances could abstract the process of converting numbers into binary. I chose to TDD my solution starting with the simplest examples for 8 bit numbers:
 
-8 bit numbers:
-| Input | Output |
+| Input       | Output                  |
+|:------------- |:-------------         |
 | 1 | 00000001 |
 | 2  | 00000010 |
 | 3 | 00000011 |
@@ -25,7 +25,6 @@ rspec
 ### Design decisions
 
 Part of the challenge here was to attempt to implement more 'clean code' practices from https://github.com/uohzxela/clean-code-ruby (a refactored  version of Robert C. Martin's book Clean Code, originally for JavaScript). Therefore, I tried to think carefully about my variable names, dependency injection, DRY principles and SRPs.
-
 
 ### Known issues
 
